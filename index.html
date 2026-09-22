@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Career Guidance System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AI Career Guidance System</h1>
+
+    <p>
+        Enter your skills and interests to get a career recommendation.
+    </p>
+
+    <form action="/predict" method="POST">
+
+        <label>Programming Skill</label>
+        <select name="programming" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+
+        <label>Mathematics</label>
+        <select name="mathematics" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+
+        <label>Communication Skill</label>
+        <select name="communication" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+
+        <label>Web Development Skill</label>
+        <select name="web" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+
+        <label>Area of Interest</label>
+        <select name="interest" required>
+            <option value="Technology">Technology</option>
+            <option value="Programming">Programming</option>
+            <option value="Data">Data</option>
+            <option value="Software">Software</option>
+        </select>
+
+        <button type="submit">
+            Get Career Recommendation
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
